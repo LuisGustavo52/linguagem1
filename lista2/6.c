@@ -1,6 +1,6 @@
 #include <stdio.h>
 #include <stdlib.h>
-#include "matriz.h"
+#include "matrizLib.h"
 
 void somaMatriz(int a[][100], int b[][100], int c[][100], int linhas,int cols){
 	int i,j;
