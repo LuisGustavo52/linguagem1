@@ -1,6 +1,6 @@
 #include <stdio.h>
 #include <stdlib.h>
-#include "matriz.h"
+#include "matrizLib.h"
 
 int main(){
 	int matriz[100][100], n, m, i,j, x,cont = 0;
