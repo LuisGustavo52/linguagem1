@@ -1,6 +1,6 @@
 #include <stdio.h>
 #include <stdlib.h>
-#include "matriz.h"
+#include "matrizLib.h"
 
 void printMatrizDp(int m[][100],int linhas,int cols){
 	int i,j;
