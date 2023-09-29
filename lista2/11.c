@@ -10,7 +10,7 @@ void geraMatriz(int m[][100]){
 }
 
 int main(){
-	int vetor[100][100],n,tam[2], x[2],y[2],result = 0,i,j,k;
+	int cont = 0, vetor[100][100],n,tam[2], x[2],y[2],result = 0,i,j,k;
 	
 	scanf("%d",&n);
 	geraMatriz(vetor);	
@@ -21,8 +21,8 @@ int main(){
 		tam[1] = (y[1] - y[0]) + 1;
 		printf("tamanhos: %d %d",tam[0], tam[1]);
 		
-		for(j=x[0]; j<=tam[0];j++){
-			for(k=y[0]; k<=tam[1];k++){
+		for(j=x[0]; j<(tam[0] + x[0]);j++){
+			for(k=y[0]; k<(tam[1] + y[0]);k++){
 				printf("alberto%d %d\n",j,k);
 				if(vetor[j][k] != 1){
 					printf("fabio\n");
@@ -32,6 +32,14 @@ int main(){
 			}
 		}
 	}
-	
+		
+		for(i=0; i<100; i++){
+			for(j=x[0]; j<100;j++){
+				if(vetor[i][j] == 1){
+					cont++;
+				}
+			}						
+	}
+	printf("%d\n",cont);
 	printf("%d",result);
 }
